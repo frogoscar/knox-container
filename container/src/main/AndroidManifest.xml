@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.samsung.knox.samples.containerlwc"
+    android:versionCode="0"
+    android:versionName="0.1" >
+
+    <uses-permission android:name="android.permission.sec.MDM_ENTERPRISE_CONTAINER" />
+    <uses-permission android:name="android.permission.sec.MDM_APP_MGMT" />
+    <uses-permission android:name="android.permission.sec.MDM_APP_BACKUP" />
+    <uses-permission android:name="android.permission.sec.MDM_RESTRICTION" />
+    <uses-permission android:name="com.sec.enterprise.knox.permission.KNOX_RCP_SYNC_MGMT" />
+    <uses-permission android:name="android.permission.sec.MDM_ENTERPRISE_VPN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:name="com.samsung.knox.samples.containerlwc.app.SAApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sa_container" >
+        <activity
+            android:name="com.samsung.knox.samples.containerlwc.ui.AdminLicenseActivationActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.samsung.knox.samples.containerlwc.ui.ContainerCreationRemovalActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="com.samsung.knox.samples.containerlwc.ui.LightWeightConfigTypeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="com.samsung.knox.samples.containerlwc.ui.AboutActivity"
+            android:label="@string/title_activity_home"
+            android:parentActivityName="com.samsung.knox.samples.containerlwc.ui.AdminLicenseActivationActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.samsung.knox.samples.containerlwc.ui.AdminLicenseActivationActivity" />
+        </activity>
+
+        <receiver
+            android:name="com.samsung.knox.samples.containerlwc.receivers.DeviceAdministrator"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/enterprise_device_admin" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+                <action android:name="android.app.action.DEVICE_ADMIN_DISABLED" />
+                <action android:name="android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.samsung.knox.samples.containerlwc.receivers.LicenseReceiver" >
+            <intent-filter>
+                <action android:name="edm.intent.action.license.status" />
+                <action android:name="edm.intent.action.knox_license.status" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.samsung.knox.samples.containerlwc.receivers.ContainerCreationStatusReceiver" >
+            <intent-filter>
+                <action android:name="com.samsung.knox.container.creation.status" />
+                <action android:name="com.samsung.enterprise.container_state_changed" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

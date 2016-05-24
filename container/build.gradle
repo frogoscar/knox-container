@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    lintOptions {
+        abortOnError false
+    }
+
+
+    defaultConfig {
+        applicationId "com.samsung.knox.samples.containerlwc"
+        minSdkVersion 19
+        targetSdkVersion 23
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile files('libs/android-support-v4.jar')
+    provided files('libs/edm.jar')
+    provided files('libs/knox.jar')
+    provided files('libs/rc.jar')
+}

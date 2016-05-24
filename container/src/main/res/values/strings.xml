@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Light Weight Container</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_home">Light Weight Container</string>
+    <string name="action_disable_admin_byod">Disable Admin/BYOD</string>
+    <string name="app_version_text">version</string>
+    <string name="ok">OK</string>
+    <string name="no_internet_detail_message">No internet connectivity</string>
+	<string name="about_app">About App</string>
+    
+    
+    <!-- Admin and License activation constants -->
+
+	<string name = "yes">Yes</string>
+	<string name = "no">No</string>
+	<string name = "device_admin_unistalled">Device admin uninstalled from device</string>
+	<string name = "uninstall_admin_from_device">Do you want to uninstall self (this app) from device?</string>
+	<string name = "uninstall_admin_from_device_heading">Uninstall self from device</string>
+    <string name="device_administration">Device Administration</string>
+     <string name="enable_byod">Enable BYOD</string>
+    <string name="enable_admin">Enable Admin</string>
+    <string name="corp_or_byod">Corporate Liable or BYOD</string>
+    <string name="license_activation">License Activation</string>
+    <string name="enter_klm_key">Enter KLM Key</string>
+    <string name="activate_klm">Activate KLM</string>
+    <string name="enter_elm_key">Enter ELM Key</string>
+    <string name="activate_elm">Activate ELM</string>
+    <string name="create_container">Create Container</string>
+    
+    
+    <string name="api_create_com_container">Create COM Container</string>
+    <string name="api_remove_container">Remove Container</string>
+    <string name="api_install_application_in_container">Install App in Container</string>
+    <string name="api_create_container">Create KNOX Container</string>
+    <string name="api_create_container_admin_inside">Create KNOX Container (admin inside container)</string>
+    <string name="api_create_container_sdp_admin_inside">Create SDP enabled KNOX Container (admin inside container)</string>
+    <string name="api_create_container_sdp">Create SDP enabled KNOX Container</string>
+    <string name="api_do_self_uninstall">Do self Uninstall</string>
+    <string name="api_get_status">Get Status</string>
+    <string name="api_get_containers">Get Containers</string>
+    <string name="enter_container_id">Enter Container Id</string>
+    <string name="knox_uninstallation_successful">KNOX uninstallation is successful</string>
+    <string name="knox_uninstallation_failed">KNOX uninstallation failed</string>
+    <string name="warn_container_created">Container already created</string>
+    
+    <!-- LWC  -->
+<string name="api_set_folder_header_title">Set Folder Header Title</string>
+    <string name="api_get_folder_header_title">Get Folder Header Title</string>
+    <string name="folder_header_title">Folder Header Title</string>
+    <string name="enter_folder_header_title">Enter Folder Header Title</string>
+    <string name="folder_header_title_set">Folder Header Title set successfully</string>
+    <string name="folder_header_title_is">Folder Header Title is</string>    
+     <string name="api_clone_lwc_type">Clone Light Weight Configuration Type</string>
+    
+    <string name="select_container_type">Select Container Type</string>
+     <string name="sdp_container">SDP enabled KNOX Container</string>
+    <string name="config_type_exists">Configuration type exists</string>
+    <string name="config_type_name_for_container_with_id">The configuration type name for container with id: </string>
+    <string name="is">is </string>
+	  <string name="no_container_exists">No container exists</string>
+    <string name="container_does_not_exist">This container does not exist</string>
+     <string name="api_set_config_type_name">Set Configuration Type Name</string>
+    <string name="config_type_name">Configuration Type Name</string>
+    <string name="enter_config_type_name">Enter Configuration Type Name</string>
+     <string name="api_save_config_type_object">Save Config Type</string>
+   <string name="container_management_policies">Container Management Policies</string>
+   <string name="api_lock_container">Lock Container</string>
+    <string name="api_unlock_container">Unlock Container</string>
+     <string name="container_locked">Container is locked</string>
+     <string name="container_unlocked">Container is unlocked</string>
+     <string name="container_not_locked">Failed in locking the container</string>
+     <string name="container_not_unlocked">Failed in unlocking the container</string>
+    
+    
+<!-- 	Error Codes -->
+    <string name="err_admin_act_failed">Admin activation failed</string>
+    <string name="err_admin_install_failed">Admin installation failed</string>
+    <string name="err_container_creation_failed_byod_na">Container creation failed, BYOD not allowed</string>
+    <string name="err_container_creation_failed_container_exist">Container creation failed, Container already exists</string>
+    <string name="err_container_creation_failed_kiosk_exist">Container creation failed, KIOSK on owner already exists</string>
+    <string name="err_creation_in_progress">Container creation already in progress</string>
+    <string name="err_creation_cancelled">Container creation cancelled</string>
+    <string name="err_creation_failed_container_mode_exists">Container creation failed, container mode exists</string>
+    <string name="err_creation_failed_tima_disabled">Container creation failed, TIMA disabled</string>
+    <string name="err_does_not_exist">Container does not exist</string>
+    <string name="err_filesystem_error">Filesystem error</string>
+    <string name="err_internal_error">Internal error</string>
+    <string name="err_invalid_password_reset_token">Inavlid password reset token</string>
+    <string name="err_max_limit_reached">Max limit reached</string>
+    <string name="err_no_admin_apk">No admin apk</string>
+    <string name="err_no_config_type">No configiration type</string>
+    <string name="err_platform_version_mismatch">Platform version mismatch in configuration</string>
+    <string name="err_sdp_not_supported">SDP not supported</string>
+    <string name="remove_container_success">Remove container success</string>
+    <string name="tz_common_close_comm_error">Trust Zone common close communication errror</string>
+    <string name="tz_common_comm_error">Trust Zone common communication error</string>
+    <string name="tz_common_init_error">Trust Zone common init error</string>
+    <string name="tz_common_init_error_tamper_fuse_fail">Trust Zone common init error, tamper fuse fail</string>
+    <string name="tz_init_msr_mismatch">Trust Zone common init MSR mismatch</string>
+    <string name="tz_init_msr_modified">Trust Zone common init MSR modified</string>
+    <string name="tz_common_init_uninitialized_secure_mem">Trust Zone common init uninitialized secure memory</string>
+    <string name="tz_internal_error">Trust Zone internal error</string>
+    <string name="tz_npe">Trust Zone null pointer exception</string>
+    <string name="tz_common_res_req_mismatch">Trust Zone common response request mismatch</string>
+    <string name="tz_common_undefined_error">Trust Zone common undefined error</string>
+    <string name="tz_keystore_error">Trust Zone keystore error</string>
+    <string name="tz_keystore_init_failed">Trust Zone keystore init failed</string>
+    <string name="container_active">Container is active</string>
+    <string name="container_inactive">Container is inactive</string>
+    <string name="container_creation_in_progress">Container creation in progress</string>
+    <string name="container_removal_in_progress">Container removal in progress</string>
+     <string name="app_name_display">Light Weight Container</string>
+     <string name="app_version">Ver 1.0</string>
+     <string name="SDK_version">KNOX Premium SDK ver 2.4</string>
+     <string name="app_desc">This application demonstrates implementation of light weight configuration type policies on KNOX container</string>
+   
+	<string name="err_internal">Internal error</string>
+
+       <string name="err_internal_server">Internal server error</string>
+
+       <string name="err_licence_invalid_license">Invalid license</string>
+
+       <string name="err_invalid_package_name">Invalid package name</string>
+
+       <string name="err_licence_activation_not_found">License activation not found</string>
+
+       <string name="err_licence_deactivated">License deactivated</string>
+
+       <string name="err_licence_expired">License expired</string>
+
+       <string name="err_licence_quantity_exhausted">License quantity exhausted</string>
+
+       <string name="err_licence_terminated">License terminated</string>
+
+       <string name="err_network_disconnected">Network disconnected</string>
+
+       <string name="err_network_general">Network general error</string>
+
+       <string name="err_none">Error none</string>
+
+       <string name="err_unknown">Error unknown</string>
+
+       <string name="err_not_current_date">Not current date</string>
+
+       <string name="err_null_params">NULL params</string>
+       
+       <string name="none">None</string>
+
+       <string name="err_user_disagrees_license_agreement">User disagrees EULA</string>
+     
+	
+	
+</resources>
